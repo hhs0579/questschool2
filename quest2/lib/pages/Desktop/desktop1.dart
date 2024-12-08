@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:quest/components/color.dart';
+
+import 'package:quest2/components/color.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Desktop1 extends StatefulWidget {
@@ -27,6 +28,7 @@ class _Desktop1State extends State<Desktop1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xffFFF1B2),
       body: LayoutBuilder(
         builder: (context, constraints) {
           return Container(
@@ -35,7 +37,7 @@ class _Desktop1State extends State<Desktop1> {
               minHeight: MediaQuery.of(context).size.height,
             ),
             width: MediaQuery.of(context).size.width,
-            child: Container(
+            child: SizedBox(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
               child: Stack(
@@ -43,18 +45,10 @@ class _Desktop1State extends State<Desktop1> {
                 children: [
                   Positioned.fill(
                     // 전체 화면을 채우는 SVG 배경
-                    child: Image.asset(
-                      'assets/images/back.png', // SVG 파일 경로
-                      fit: BoxFit.cover,
-                      alignment: Alignment.center,
-                    ),
-                  ),
-                  Positioned.fill(
-                    // 전체 화면을 채우는 SVG 배경
                     child: Padding(
                       padding: const EdgeInsets.only(right: 100),
-                      child: Image.asset(
-                        'assets/images/desk1.png', // SVG 파일 경로
+                      child: SvgPicture.asset(
+                        'assets/images/desk1.svg', // SVG 파일 경로
                         fit: BoxFit.contain,
                         alignment: Alignment.center,
                       ),

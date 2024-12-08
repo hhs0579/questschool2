@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppColor {
   static const Color primary = Color(0xFF191919);
   //폰트 컬러
-  static const Color font1 = Color(0xFFFF7700);
+  static const Color font1 = Color(0xFFFFD100);
   static const Color font2 = Color(0xFF474747);
   static const Color font3 = Color(0xFF757575);
   static const Color font4 = Color(0xFF999999);

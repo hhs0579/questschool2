@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quest/components/scroll.dart';
-import 'package:quest/pages/mainpage.dart';
+
 import 'package:quest2/components/scroll.dart';
+import 'package:quest2/pages/mainpage.dart';
 
 void main() {
   runApp(const MyApp());
