@@ -123,7 +123,7 @@ class _Desktop1State extends State<Desktop1> {
                             height: 52,
                             width: 170,
                             decoration: BoxDecoration(
-                              color: AppColor.font1,
+                              color: Colors.black,
                               borderRadius: BorderRadius.circular(15),
                             ),
                             child: Column(
@@ -155,54 +155,6 @@ class _Desktop1State extends State<Desktop1> {
                       ],
                     ),
                   ),
-                  Positioned(
-                    bottom: 38,
-                    left: (MediaQuery.of(context).size.width - 970) / 2,
-                    child: Container(
-                      width: 970,
-                      height: 95,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff414042),
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(20.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            const Text(
-                              '편리하고 안전하게 상담기록 관리하기',
-                              style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.white),
-                            ),
-                            InkWell(
-                              onTap: () =>
-                                  _launchURL('https://questschoolmall.kr/code'),
-                              child: Container(
-                                width: 254,
-                                height: 52,
-                                decoration: BoxDecoration(
-                                  color: AppColor.font1,
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
-                                child: const Center(
-                                  child: Text(
-                                    '가입 신청하기&학교 코드 신청하기',
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                  )
                 ],
               ),
             ),

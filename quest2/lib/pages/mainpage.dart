@@ -3,6 +3,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:quest2/components/screensized.dart';
 import 'package:quest2/pages/Desktop/desktop1.dart';
+import 'package:quest2/pages/Desktop/desktop2.dart';
+import 'package:quest2/pages/Desktop/desktop3.dart';
+import 'package:quest2/pages/Desktop/desktop4.dart';
+import 'package:quest2/pages/Desktop/desktop5.dart';
 import 'package:quest2/pages/Phone/phonepage.dart';
 
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
@@ -60,10 +64,10 @@ class _MainPageState extends State<MainPage> {
           physics: const BouncingScrollPhysics(),
           children: const [
             Desktop1(),
-            // Desktop2(),
-            // Desktop3(),
-            // Desktop4(),
-            // Desktop5(),
+            Desktop2(),
+            Desktop3(),
+            Desktop4(),
+            Desktop5(),
             // Desktop6(),
             // Desktop7(),
             // Desktop8(),
