@@ -12,6 +12,7 @@ class Desktop2 extends StatelessWidget {
       body: LayoutBuilder(
         builder: (context, constraints) {
           return Container(
+            color: Color(0xff1E1E1E),
             constraints: BoxConstraints(
               minHeight: MediaQuery.of(context).size.height,
             ),

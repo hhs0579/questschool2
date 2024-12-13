@@ -938,10 +938,26 @@ class _Desktop5State extends State<Desktop5> {
                       const SizedBox(
                         width: 92,
                       ),
-                      if (a) SvgPicture.asset('assets/images/phone_1.svg'),
-                      if (b) SvgPicture.asset('assets/images/phone_2.svg'),
-                      if (c) SvgPicture.asset('assets/images/phone_3.svg'),
-                      if (d) SvgPicture.asset('assets/images/phone_4.svg'),
+                      if (a)
+                        SizedBox(
+                            width: 770,
+                            height: 650,
+                            child: Image.asset('assets/images/phone_1.png')),
+                      if (b)
+                        SizedBox(
+                            width: 770,
+                            height: 650,
+                            child: Image.asset('assets/images/phone_2.png')),
+                      if (c)
+                        SizedBox(
+                            width: 770,
+                            height: 650,
+                            child: Image.asset('assets/images/phone_3.png')),
+                      if (d)
+                        SizedBox(
+                            width: 770,
+                            height: 650,
+                            child: Image.asset('assets/images/phone_4.png')),
                     ],
                   ),
                 )
